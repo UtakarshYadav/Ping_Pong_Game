@@ -1,0 +1,91 @@
+:root {
+    --time-duration: 9s;
+  }
+  body {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #app {
+    position: relative;
+    /* box-sizing: border-box; */
+  }
+  
+  #R1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-decoration-color: brown;
+  }
+  
+  #R2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-decoration-color: brown;
+  }
+  
+  #ball {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(224, 33, 71);
+    position: absolute;
+    border: 2px solid black;
+    top: 18px;
+    left: 52.5%;
+    border-radius: 50%;
+  }
+  
+  #rod1 {
+    width: 200px;
+    height: 25px;
+    position: fixed;
+    left: 50.5%;
+    border-radius: 25px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  #rod2 {
+    width: 200px;
+    height: 25px;
+    position: fixed;
+    left: 50%;
+    border-radius: 25px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  #rod1 {
+    background-color: darkblue;
+    top: 0px;
+  }
+  
+  #rod2 {
+    background-color: blueviolet;
+    bottom: 0px;
+  }
+  
+  /* ball moving transition code */
+  
+  .animate-top-right {
+    transition: transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(-2000px);
+  }
+  .animate-bottom-right {
+    transition: transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(2000px);
+  }
+  
+  .animate-top-left {
+    transition: transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(-2000px);
+  }
+  
+  .animate-bottom-left {
+    transition: transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(2000px);
+  }
+  
